@@ -6,12 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Loading Screen ----
   const loader = document.querySelector('.loader');
-  window.addEventListener('load', () => {
-    setTimeout(() => {
+  const hideLoader = () => {
+    if (loader && !loader.classList.contains('hidden')) {
       loader.classList.add('hidden');
       document.body.style.overflow = 'auto';
-    }, 1800);
-  });
+    }
+  };
+
+  if (document.readyState === 'complete') {
+    setTimeout(hideLoader, 1000);
+  } else {
+    window.addEventListener('load', () => setTimeout(hideLoader, 1200));
+    // Safety fallback: dismiss after 2.5s if load event was missed
+    setTimeout(hideLoader, 2500);
+  }
   document.body.style.overflow = 'hidden';
 
   // ---- Navbar Scroll Effect ----
