@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alan Marinho — Administrador e Consultor Empresarial. Especialista em Gestão de Negócios, Projetos, Finanças e Recursos Humanos. Transformando desafios empresariais em oportunidades de crescimento.">
+  <meta name="keywords" content="administrador, consultor empresarial, gestão de negócios, gestão de projetos, planejamento financeiro, recursos humanos, Alan Marinho">
+  <meta name="author" content="Alan Marinho">
+  <meta property="og:title" content="Alan Marinho | Administrador & Consultor Empresarial">
+  <meta property="og:description" content="Transformando desafios empresariais em oportunidades de crescimento sustentável.">
+  <meta property="og:type" content="website">
+
+  <title>Alan Marinho | Administrador & Consultor Empresarial</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">Alan<span>.</span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ===================== CURSOR GLOW ===================== -->
+  <div class="cursor-glow"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="navbar-logo">Alan<span>.</span></a>
+      <div class="navbar-links" id="navbar-links">
+        <a href="#hero">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact" class="navbar-cta">Contato</a>
+      </div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Disponível para novos projetos
+        </div>
+        <h1 class="hero-name">
+          Alan<br><span class="highlight">Marinho</span>
+        </h1>
+        <p class="hero-role">
+          Administrador · <span class="typed-text"></span><span class="cursor"></span>
+        </p>
+        <p class="hero-description">
+          Transformando desafios empresariais em oportunidades de crescimento sustentável.
+          Estratégia, eficiência e resultados para o seu negócio.
+        </p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn-primary">
+            Meus Serviços
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#about" class="btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Saiba Mais
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="assets/foto-alan-marinho.jpg" alt="Alan Marinho — Administrador e Consultor Empresarial" loading="eager">
+          <!-- Floating element: Projects -->
+          <div class="float-element el-1">
+            <div class="float-icon">📊</div>
+            <div class="float-label">Projetos</div>
+            <div class="float-value">150+</div>
+          </div>
+          <!-- Floating element: Satisfaction -->
+          <div class="float-element el-2">
+            <div class="float-icon">⭐</div>
+            <div class="float-label">Satisfação</div>
+            <div class="float-value">98%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image Column -->
+        <div class="about-image-section reveal-left">
+          <div class="about-image-card">
+            <img src="assets/foto-alan-marinho.jpg" alt="Alan Marinho em reunião de consultoria" loading="lazy">
+            <div class="about-image-overlay">
+              <div class="experience-badge">
+                <span class="exp-number">10+</span>
+                <span class="exp-text">Anos de<br>Experiência</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content">
+          <div class="reveal">
+            <span class="section-label">Sobre Mim</span>
+            <h2 class="section-title">Transformando visão<br>em <em>resultados concretos</em></h2>
+          </div>
+          <p class="about-text reveal delay-1">
+            Sou <strong>Alan Marinho</strong>, Administrador graduado com ampla experiência em gestão empresarial. Ao longo da minha carreira, desenvolvi uma abordagem estratégica que combina <strong>análise de dados</strong>, <strong>gestão de pessoas</strong> e <strong>planejamento financeiro</strong> para impulsionar o crescimento de negócios de diversos segmentos.
+          </p>
+          <p class="about-text reveal delay-2">
+            Minha missão é ajudar empresas e empreendedores a alcançarem seu máximo potencial, através de soluções personalizadas e orientadas a resultados. Cada projeto é uma oportunidade única de criar impacto real.
+          </p>
+
+          <!-- Stats -->
+          <div class="stats-grid reveal delay-3">
+            <div class="stat-card">
+              <div class="stat-number" data-target="150" data-suffix="+">0</div>
+              <div class="stat-label">Projetos</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="80" data-suffix="+">0</div>
+              <div class="stat-label">Clientes</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="98" data-suffix="%">0</div>
+              <div class="stat-label">Satisfação</div>
+            </div>
+          </div>
+
+          <!-- Skills Tags -->
+          <div class="skills-tags reveal delay-4">
+            <span class="skill-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              Planejamento Estratégico
+            </span>
+            <span class="skill-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              Liderança de Equipes
+            </span>
+            <span class="skill-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              Análise Financeira
+            </span>
+            <span class="skill-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              Gestão Ágil
+            </span>
+            <span class="skill-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              Business Intelligence
+            </span>
+            <span class="skill-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg>
+              Negociação
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVICES SECTION ===================== -->
+  <section class="services" id="services">
+    <div class="container">
+      <!-- Header -->
+      <div class="services-header">
+        <span class="section-label reveal">O que faço</span>
+        <h2 class="section-title reveal delay-1">Soluções sob medida para<br>o <em>seu negócio</em></h2>
+        <p class="section-subtitle reveal delay-2">
+          Ofereço serviços especializados que combinam estratégia, eficiência e inovação para impulsionar o crescimento do seu negócio.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid">
+
+        <!-- Service 1: Consultoria Empresarial -->
+        <div class="service-card reveal delay-1">
+          <span class="service-card-number">01</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Consultoria Empresarial</h3>
+          <p class="service-desc">
+            Diagnóstico completo do seu negócio com planos de ação estratégicos para otimizar processos, reduzir custos e aumentar a rentabilidade.
+          </p>
+          <div class="service-features">
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Diagnóstico Organizacional
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Plano de Ação
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Reestruturação
+            </span>
+          </div>
+        </div>
+
+        <!-- Service 2: Gestão de Projetos -->
+        <div class="service-card reveal delay-2">
+          <span class="service-card-number">02</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Gestão de Projetos</h3>
+          <p class="service-desc">
+            Planejamento, execução e monitoramento de projetos com metodologias ágeis e tradicionais para garantir entregas no prazo e dentro do orçamento.
+          </p>
+          <div class="service-features">
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Scrum & Kanban
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              PMO
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              KPIs & Métricas
+            </span>
+          </div>
+        </div>
+
+        <!-- Service 3: Finanças -->
+        <div class="service-card reveal delay-3">
+          <span class="service-card-number">03</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Planejamento Financeiro</h3>
+          <p class="service-desc">
+            Análise e planejamento financeiro para empresas e profissionais, com foco em sustentabilidade, crescimento e controle de fluxo de caixa.
+          </p>
+          <div class="service-features">
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Fluxo de Caixa
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Orçamento Empresarial
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Análise de Viabilidade
+            </span>
+          </div>
+        </div>
+
+        <!-- Service 4: Recursos Humanos -->
+        <div class="service-card reveal delay-4">
+          <span class="service-card-number">04</span>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Gestão de Pessoas</h3>
+          <p class="service-desc">
+            Estratégias para atrair, desenvolver e reter talentos. Construção de equipes de alta performance com cultura organizacional forte e engajada.
+          </p>
+          <div class="service-features">
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Recrutamento
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Treinamento
+            </span>
+            <span class="service-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Clima Organizacional
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info Column -->
+        <div class="contact-info">
+          <span class="section-label reveal">Contato</span>
+          <h2 class="section-title reveal delay-1">Vamos conversar sobre<br>o seu <em>projeto?</em></h2>
+          <p class="contact-text reveal delay-2">
+            Estou disponível para novos projetos e consultorias. Entre em contato e vamos discutir como posso ajudar o seu negócio a alcançar novos patamares.
+          </p>
+
+          <!-- Contact Methods -->
+          <div class="contact-methods reveal delay-3">
+            <a href="mailto:contato@alanmarinho.com.br" class="contact-method">
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">E-mail</div>
+                <div class="contact-method-value">contato@alanmarinho.com.br</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/5500000000000" target="_blank" class="contact-method">
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">WhatsApp</div>
+                <div class="contact-method-value">(00) 00000-0000</div>
+              </div>
+            </a>
+
+            <div class="contact-method">
+              <div class="contact-method-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-label">Localização</div>
+                <div class="contact-method-value">Brasil</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links reveal delay-4">
+            <a href="#" class="social-link" aria-label="LinkedIn" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram" target="_blank">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter / X" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-wrapper reveal-right delay-2">
+          <h3 class="form-title">Envie uma mensagem</h3>
+          <p class="form-subtitle">Responderei em até 24 horas úteis.</p>
+
+          <form id="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="subject">Assunto</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected>Selecione um assunto</option>
+                  <option value="consultoria">Consultoria Empresarial</option>
+                  <option value="projetos">Gestão de Projetos</option>
+                  <option value="financeiro">Planejamento Financeiro</option>
+                  <option value="rh">Gestão de Pessoas</option>
+                  <option value="outro">Outro Assunto</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Conte-me sobre o seu projeto ou desafio..." rows="5" required></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn-primary">
+                  Enviar Mensagem
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Success Message -->
+          <div class="form-success">
+            <div class="form-success-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>Mensagem enviada!</h3>
+            <p>Obrigado pelo contato. Retornarei em breve!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">Alan<span>.</span></div>
+      <p class="footer-text">© 2024 Alan Marinho. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#hero">Início</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
