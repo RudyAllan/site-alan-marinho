@@ -1121,6 +1121,16 @@ ul { list-style: none; }
   box-shadow: var(--shadow-gold);
 }
 
+.contact-method-whatsapp {
+  border-color: rgba(37, 211, 102, 0.3);
+  background: linear-gradient(135deg, rgba(37, 211, 102, 0.08), rgba(15, 23, 42, 0.75));
+}
+
+.contact-method-whatsapp:hover {
+  border-color: #25D366;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.25);
+}
+
 .contact-method-icon {
   width: 48px;
   height: 48px;
@@ -1130,10 +1140,26 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  transition: background 0.3s var(--ease-smooth);
+  transition: all 0.3s var(--ease-smooth);
 }
 
-.contact-method:hover .contact-method-icon {
+.whatsapp-icon {
+  background: linear-gradient(135deg, #25D366, #128C7E) !important;
+}
+
+.whatsapp-icon svg {
+  color: #ffffff !important;
+}
+
+.instagram-icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important;
+}
+
+.instagram-icon svg {
+  color: #ffffff !important;
+}
+
+.contact-method:hover .contact-method-icon:not(.whatsapp-icon):not(.instagram-icon) {
   background: linear-gradient(135deg, var(--gold-500), var(--gold-400));
 }
 
@@ -1144,8 +1170,12 @@ ul { list-style: none; }
   transition: color 0.3s var(--ease-smooth);
 }
 
-.contact-method:hover .contact-method-icon svg {
+.contact-method:hover .contact-method-icon:not(.whatsapp-icon):not(.instagram-icon) svg {
   color: var(--navy-950);
+}
+
+.contact-method-info {
+  flex: 1;
 }
 
 .contact-method-label {
@@ -1160,6 +1190,36 @@ ul { list-style: none; }
   font-size: 0.95rem;
   color: var(--white);
   font-weight: 500;
+}
+
+.contact-method-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: 99px;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s var(--ease-smooth);
+  flex-shrink: 0;
+}
+
+.contact-method-whatsapp:hover .contact-method-btn {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.contact-method-btn svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;
+}
+
+.contact-method-whatsapp:hover .contact-method-btn svg {
+  transform: translateX(3px);
 }
 
 /* Social links */
@@ -1397,7 +1457,7 @@ ul { list-style: none; }
 /* Back to top button */
 .back-to-top {
   position: fixed;
-  bottom: 2rem;
+  bottom: 6.2rem;
   right: 2rem;
   width: 48px;
   height: 48px;
@@ -1431,6 +1491,85 @@ ul { list-style: none; }
   width: 22px;
   height: 22px;
   color: var(--navy-950);
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s var(--ease-smooth);
+  text-decoration: none;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.65);
+}
+
+.floating-whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-whatsapp-icon svg {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  display: block;
+}
+
+.floating-whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #25D366;
+  opacity: 0.8;
+  animation: whatsappPulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  pointer-events: none;
+}
+
+@keyframes whatsappPulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.floating-whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  background: var(--navy-900);
+  color: var(--white);
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid rgba(37, 211, 102, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s var(--ease-smooth);
+  pointer-events: none;
+}
+
+.floating-whatsapp:hover .floating-whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 /* ============================================================
@@ -1563,6 +1702,36 @@ ul { list-style: none; }
 
   .contact-form-wrapper {
     padding: 1.8rem;
+  }
+
+  .contact-method {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .contact-method-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.2rem;
+  }
+
+  .floating-whatsapp {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 52px;
+    height: 52px;
+  }
+
+  .floating-whatsapp-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .back-to-top {
+    bottom: 5.5rem;
+    right: 1.5rem;
+    width: 42px;
+    height: 42px;
   }
 
   .footer .container {
